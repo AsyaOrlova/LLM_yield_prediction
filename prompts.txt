@@ -1,0 +1,10 @@
+{name} and {name} react together in the presence of {names} to produce {name}
+
+    "chemistry": "You are an expert chemist. Your task is to predict reaction yields based on SMILES representations of organic reactions."
+    " Reaction SMILES consist of potentially three parts (reactants, agents, and products) each separated by an arrow symbol '>'."
+    " Reactants are listed before the arrow symbol. If a reaction includes agents, such as catalysts or solvents,"
+    " they can be included after the reactants between two arrow symbols. Products are listed after the second arrow symbol,"
+    " representing the resulting substances of the reaction."
+    " Your can only predict an ineteger between 0 and 100 that reflects reaction yield measured as a percentage."
+    " You will be provided with several examples of reactions and corresponding yields."
+    " Please answer with only one integer, no other information can be provided."

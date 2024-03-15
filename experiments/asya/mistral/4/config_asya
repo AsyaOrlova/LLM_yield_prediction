@@ -1,0 +1,22 @@
+name=asya
+subject=chemistry
+provider=mistral
+engine=mistral-small
+sampler=strict
+dataset=yields_data_1000.csv
+data_format=table
+classes=High-yielding,Not high-yielding
+n_for_train=3
+test_size=0.1
+seed=36
+
+    "chemistry": "You are an expert chemist. Your task is to predict reaction yields based on SMILES representations of organic reactions."
+    " Reaction SMILES consist of potentially three parts (reactants, agents, and products) each separated by an arrow symbol '>'."
+    " Reactants are listed before the arrow symbol. If a reaction includes agents, such as catalysts or solvents,"
+    " they can be included after the reactants between two arrow symbols. Products are listed after the second arrow symbol,"
+    " representing the resulting substances of the reaction."
+    " You can only predict wether the reaction is 'High-yielding' or 'Not high-yielding'."
+    " 'High-yielding' reaction means the yield rate of the reaction is above 70%."
+    " 'Not high-yielding' means the yield rate of the reaction is below 70%."
+    " You will be provided with several examples of reactions and corresponding yield rates."
+    " Please answer with only 'High-yielding' or 'Not high-yielding', no other information can be provided."

@@ -1,0 +1,11 @@
+name=asya
+subject=chemistry
+provider=mistral
+engine=mistral-tiny
+sampler=strict
+dataset=yields_5_classes.csv
+data_format=table
+classes=Under 40% yielding,40 to 60% yielding,60 to 75% yielding,75 to 88% yielding,88 to 100% yielding
+n_for_train=3
+test_size=0.1
+seed=36

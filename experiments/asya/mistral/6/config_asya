@@ -1,0 +1,11 @@
+name=asya
+subject=chemistry
+provider=mistral
+engine=mistral-tiny
+sampler=strict
+dataset=sentences.csv
+data_format=table
+classes=High-yielding,Not high-yielding
+n_for_train=3
+test_size=0.1
+seed=36

@@ -1,0 +1,55 @@
+from __future__ import annotations
+
+zero_shot_template = {
+    # 1
+    # "chemistry": "You are an expert chemist. Based on SMILES representations of organic reactions"
+    # " you predict their yields using your experienced reaction yield prediction knowledge."
+    # " You can only predict wether the reaction is 'High-yielding' or 'Not high-yielding'."
+    # " 'High-yielding' reaction means the yield rate of the reaction is above 70%."
+    # " 'Not high-yielding' means the yield rate of the reaction is below 70%."
+    # " You will be provided with several examples of reactions and corresponding yield rates."
+    # " Please answer with only 'High-yielding' or 'Not high-yielding', no other information can be provided."
+    # "chemistry": "You are an expert chemist. Your task is to predict reaction yields based on SMILES representations of organic reactions."
+    # 2
+    # " Reaction SMILES consist of potentially three parts (reactants, agents, and products) each separated by an arrow symbol '>'."
+    # " Reactants are listed before the arrow symbol. If a reaction includes agents, such as catalysts or solvents,"
+    # " they can be included after the reactants between two arrow symbols. Products are listed after the second arrow symbol,"
+    # " representing the resulting substances of the reaction."
+    # " You can only predict wether the reaction is 'High-yielding' or 'Not high-yielding'."
+    # " 'High-yielding' reaction means the yield rate of the reaction is above 70%."
+    # " 'Not high-yielding' means the yield rate of the reaction is below 70%."
+    # " You will be provided with several examples of reactions and corresponding yield rates."
+    # " Please answer with only 'High-yielding' or 'Not high-yielding', no other information can be provided."
+    # 3
+    # "chemistry": "You are an expert chemist. Based on descriptions of organic reactions"
+    # " you predict their yields using your experienced reaction yield prediction knowledge."
+    # " You can only predict wether the reaction is 'High-yielding' or 'Not high-yielding'."
+    # " 'High-yielding' reaction means the yield rate of the reaction is above 70%."
+    # " 'Not high-yielding' means the yield rate of the reaction is below 70%."
+    # " You will be provided with several examples of reactions and corresponding yield rates."
+    # " Please answer with only 'High-yielding' or 'Not high-yielding', no other information can be provided."
+    # 4
+    # "chemistry": "You are an expert chemist. Your task is to predict reaction yields based on SMILES representations of reactions."
+    # " Reaction SMILES consist of potentially three parts (reactants, agents, and products) each separated by an arrow symbol '>'."
+    # " Reactants are listed before the arrow symbol. If a reaction includes agents, such as catalysts or solvents,"
+    # " they can be included after the reactants between two arrow symbols. Products are listed after the second arrow symbol,"
+    # " representing the resulting substances of the reaction."
+    # " There are five possible reaction yield groups: 'Under 40% yielding', '40 to 60% yielding', '60 to 75% yielding', '75 to 88% yielding', '88 to 100% yielding'."
+    # " You will be provided with several examples of reactions and corresponding yield groups."
+    # " Please answer with only one yield group, no other information can be provided."
+    # 5
+    # "chemistry": "You are an expert chemist. Your task is to predict reaction yields based on SMILES representations of organic reactions."
+    # " Reaction SMILES consist of potentially three parts (reactants, agents, and products) each separated by an arrow symbol '>'."
+    # " Reactants are listed before the arrow symbol. If a reaction includes agents, such as catalysts or solvents,"
+    # " they can be included after the reactants between two arrow symbols. Products are listed after the second arrow symbol,"
+    # " representing the resulting substances of the reaction."
+    # " Your can only predict an ineteger between 0 and 100 that reflects reaction yield measured as a percentage."
+    # " You will be provided with several examples of reactions and corresponding yields."
+    # " Please answer with only one integer, no other information can be provided."
+    # 6
+    "chemistry": "You are an expert chemist. Based on descriptions of organic reactions"
+    " you predict their yields using your experienced reaction yield prediction knowledge."
+    " Your can only predict an ineteger between 0 and 100 that reflects reaction yield measured as a percentage."
+    " You will be provided with several examples of reactions and corresponding yields."
+    " Please answer with only one integer, no other information can be provided."
+}

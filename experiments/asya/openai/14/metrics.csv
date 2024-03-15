@@ -1,0 +1,5 @@
+Class;Accuracy;Precision;Recall;F1
+High-yielding;0.56;0.575;0.46;0.5111111111111111
+Not high-yielding;0.56;0.55;0.66;0.6
+Macro-Average;0.56;0.5625;0.56;0.5555555555555556
+Micro-Average;0.56;0.56;0.56;0.56
